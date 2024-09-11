@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Rock Paper Scissors</title>
+    
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+
+        <p class="title_line">Rock Paper Scissors</p>
+            <div class="whole">
+            class="rock-button" >
+        <img class="rock-image" src="images/rock-emoji.png">
+    </button>
+    <button   class="paper-button">
+        <img class="paper-image" src="images/paper-emoji.png">
+    </button>
+    <button class="scissor-button">
+       <img class="scissors-image" src="images/scissors-emoji.png">
+    </button> 
+    
+    <p class="js-result result" ></p>
+    <p class="js-moves  moves" >  </p>
+    <p class="js-score score"></p>
+    
+    <button onclick="
+        score.wins=0;
+        score.loss=0;
+        score.Tie=0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        "class="reset">
+            Reset Score
+        </button>
+        <button class="js-autoplay">
+            AutoPlay
+        </button>
+    </div>
+        
+        <script src="scripts/rps.js"></script>
+    </body>
+    </html>
